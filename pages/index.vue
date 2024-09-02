@@ -22,15 +22,15 @@
             <div class="flex-1">
               <label for="email" class="block text-lg text-white">E-mail</label>
               <input type="email" id="email" name="email" v-model="email" placeholder="Insira o seu E-mail"
-                    class="w-full h-12 px-4 rounded-full bg-white bg-opacity-20 text-white border-none focus:ring-2 focus:ring-blue-500"  style="width: 374px; height: 40px;" />
+                  class="w-full h-12 px-4 rounded-full bg-white bg-opacity-20 text-white border-none focus:ring-2 focus:ring-blue-500"  style="width: 374px; height: 40px;" />
             </div>
           </div>
 
           <div class="flex flex-col gap-4 lg:flex-row lg:gap-6">
             <div class="flex-1">
               <label for="phone" class="block text-lg text-white">Telefone</label>
-              <input type="text" id="phone" name="phone" v-model="phone" placeholder="(DDD) 9 0000-0000"
-                    v-mask="'(00) 0 0000-0000'"
+              <input type="text" id="phone" name="phone" v-model="phoneNumber" placeholder="(00) 9 0000-0000"
+                  v-maska="'(##) # ####-####'"
                     class="w-full h-12 px-4 rounded-full bg-white bg-opacity-20 text-white border-none focus:ring-2 focus:ring-blue-500" style="width: 374px; height: 40px;" />
             </div>
             <div class="flex-1">
@@ -60,10 +60,9 @@
 <script setup>
 import { ref } from 'vue';
 import { useRouter } from 'vue-router';
-
 const name = ref('');
 const email = ref('');
-const phone = ref('');
+const phoneNumber = ref('');
 const company = ref('');
 const showIcon = ref(false);
 
