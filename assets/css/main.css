@@ -7,55 +7,11 @@
     src: url('/fonts/Gilroy-Bold.otf') format('opentype');
     font-weight: bold;
     font-style: normal;
-    }
+}
 
 @font-face {
     font-family: 'Gilroy-Regular';
     src: url('/fonts/Gilroy-Regular.otf') format('opentype');
     font-weight: normal;
     font-style: normal;
-    }
-
-h2 {
-    font-family: 'Gilroy-Bold', sans-serif;
-    color: #FFFFFF;
-    font-size: 49px;
-    margin-bottom: 24px;
-    }
-
-input, textarea {
-    font-family: 'Gilroy-Regular', sans-serif;
-    border-radius: 8px;
-    background: rgba(255, 255, 255, 0.2);
-    width: 374px;
-    height: 67px;
-    padding: 10px;
-    border: none;
-    color: #000;
-    }
-
-    
-.form-group {
-    margin-bottom: 32px;
-    }
-
-.form-group.flex {
-    display: flex;
-    gap: 8px;
-    }
-
-button {
-    background-color: #E30161;
-    color: #FFFFFF;
-    font-family: 'Gilroy-Bold', sans-serif;
-    font-weight: bold;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 8px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-    }
-
-button:hover {
-    background-color: #c7005b;
-    }
+}
