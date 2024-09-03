@@ -1,21 +1,19 @@
 import { defineNuxtPlugin } from '#app';
-import { configure, defineRule, ErrorMessage, Form, Field, useForm } from 'vee-validate';
+import { configure, defineRule, ErrorMessage, Form, Field } from 'vee-validate';
 import * as yup from 'yup';
 
 export default defineNuxtPlugin(nuxtApp => {
-  nuxtApp.vueApp.use(ErrorMessage);
-  nuxtApp.vueApp.use(Form);
-  nuxtApp.vueApp.use(Field);
-  nuxtApp.vueApp.use(useForm);
-
+  nuxtApp.vueApp.component('ErrorMessage', ErrorMessage);
+  nuxtApp.vueApp.component('Form', Form);
+  nuxtApp.vueApp.component('Field', Field);
 
   configure({
     generateMessage: (ctx) => {
-      const messages = {
+      const messages: Record<string, string> = {
         required: `O campo ${ctx.field} é obrigatório.`,
         email: `O campo ${ctx.field} deve ser um e-mail válido.`,
       };
-      return messages[ctx.rule.name] || `O campo ${ctx.field} é inválido.`;
+      return messages[ctx.rule?.name ?? ''] || `O campo ${ctx.field} é inválido.`;
     },
   });
 

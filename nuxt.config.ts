@@ -9,7 +9,9 @@ export default defineNuxtConfig({
     transpile: ['vee-validate', '@vueuse/core'],
   },
   plugins: [
-    '~/plugins/axios.ts'
+    '~/plugins/axios.ts',
+    '~/plugins/maska.ts',
+    '~/plugins/vee-validate.ts',
   ],
   vite: {
     optimizeDeps: {
