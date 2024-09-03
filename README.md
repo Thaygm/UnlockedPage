@@ -1,75 +1,44 @@
-# Nuxt 3 Minimal Starter
+# Nuxt App
 
-Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+Este é um projeto desenvolvido com Nuxt 3, utilizando TypeScript, Tailwind CSS, e outras bibliotecas modernas.
 
-## Setup
+## 🛠️ Construído com:
 
-Make sure to install the dependencies:
+## Dependências
 
-```bash
-# npm
-npm install
+O projeto usa as seguintes dependências:
 
-# pnpm
-pnpm install
+- **Vue**: Framework JavaScript para construção de interfaces de usuário.
+- **Nuxt**: Framework para Vue.js que facilita o desenvolvimento de aplicações universais.
+- **Tailwind CSS**: Framework CSS para estilização responsiva e utilitária.
+- **VeeValidate**: Biblioteca para validação de formulários.
+- **Yup**: Biblioteca para validação de esquemas.
+- **Axios**: Cliente HTTP para fazer requisições.
+- **Maska**: Biblioteca para máscaras de entrada.
+- **VueUse**: Coleção de composables úteis para Vue.js.
 
-# yarn
-yarn install
+## Scripts
 
-# bun
-bun install
-```
+- `build`: Compila a aplicação para produção.
+- `dev`: Inicia o servidor de desenvolvimento.
+- `generate`: Gera a aplicação estática.
+- `preview`: Visualiza a aplicação gerada.
+- `postinstall`: Prepara o Nuxt após a instalação das dependências.
 
-## Development Server
+## DevDependencies
 
-Start the development server on `http://localhost:3000`:
+O projeto inclui também ferramentas para desenvolvimento:
 
-```bash
-# npm
-npm run dev
+- **Cypress**: Framework para testes end-to-end.
+- **TypeScript**: Superset do JavaScript que adiciona tipagem estática.
+- **ESLint**: Ferramenta para análise e correção de código.
+- **Prettier**: Formatador de código.
 
-# pnpm
-pnpm run dev
+## 🚀 Começando
 
-# yarn
-yarn dev
+Essas instruções permitirão que você obtenha uma cópia do projeto em operação na sua máquina local para fins de desenvolvimento e teste:
 
-# bun
-bun run dev
-```
-
-## Production
-
-Build the application for production:
-
-```bash
-# npm
-npm run build
-
-# pnpm
-pnpm run build
-
-# yarn
-yarn build
-
-# bun
-bun run build
-```
-
-Locally preview production build:
-
-```bash
-# npm
-npm run preview
-
-# pnpm
-pnpm run preview
-
-# yarn
-yarn preview
-
-# bun
-bun run preview
-```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+1. Clone o repositório em sua máquina e abra-o em seu Editor de preferência;
+2. Abra o Terminal do projeto e digite     **npm i**      para instalação completa das dependências
+3. Para Abrir o projeto e compilar os arquivos typescript, execute no terminal     **npm run dev**
+4. Para abrir os testes, execute    *npm run cypress:open**
